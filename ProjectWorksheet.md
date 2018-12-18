@@ -22,7 +22,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-This is a click-n-shoot game where you have a crosshair and you can kill enemies on the screen. They can kill you if you lose too much time.
+This is a click-n-shoot game where you have a crosshair and you can kill enemies on the screen. They can kill you if you lose too much time. (put more details)
+
 
 ## Wireframes
 https://drive.google.com/open?id=1ddeeA9dvEupBN0VkjbT5xoJqxcfpYusO
@@ -83,10 +84,9 @@ Time frames are also key in the development cycle. You have limited time to code
 | create divs as enemies       |    H     |      4hrs      |    0hrs     |   0hrs    |
 | make animations for enemies |    M     |      3hrs      |    0hrs     |   0hrs    |
 | make the enemies appear randomly        |    H     |      4hrs      |    0hrs     |   0hrs    |
-| Make enemy clickeable        |    H     |      3hrs      |    0hrs     |   0hrs    |
-| Create a get-hit animation for enemy       |    H     |      4hrs      |    0hrs     |   0hrs    |
-| make animation for shooting enemies               |    M     |      4hrs      |    0hrs     |   0hrs    |
-| Create a get-hit animation for the user       |    H     |      4hrs      |    0hrs     |   0hrs    |
+| add events to enemies        |    H     |      3hrs      |    0hrs     |   0hrs    |
+| make animation when enemies shoot the player               |    M     |      4hrs      |    0hrs     |   0hrs    |
+| Create enemy attack animation      |    H     |      4hrs      |    0hrs     |   0hrs    |
 | Total                        |    H     |     29hrs      |    0hrs     |   0hrs    |
 
 ## Helper Functions
