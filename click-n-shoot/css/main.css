@@ -1,0 +1,55 @@
+body {
+  position: relative;
+}
+.container {
+  height: 100vh;
+  width: 900px;
+  background-image: url("../assets/bg2.gif");
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  cursor: url("../assets/cursor2.png"), auto;
+}
+.bad-guy {
+  height: 80px;
+  width: 80px;
+  background-image: url("../assets/runningEnemy.gif");
+  background-size: cover;
+  position: absolute;
+  left: 80px;
+  animation: badGuy 5s forwards;
+}
+.bad-guy-shooting {
+  background-image: url("../assets/enemyFrontOnly.gif");
+}
+.bad-guy-dying {
+  background-image: url("../assets/enemyDieOnly.gif");
+  background-size: cover;
+}
+.bullet {
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/bullet.png");
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  transition: all 0.1s ease;
+}
+
+@-webkit-keyframes badGuy {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 900px;
+  }
+}
+
+@keyframes badGuy {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 800px;
+  }
+}
