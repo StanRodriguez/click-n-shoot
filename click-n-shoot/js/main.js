@@ -1,5 +1,6 @@
 let points = 0;
 let clip = 7;
+let life = 200;
 const classes = ["bad-guy", "bad-guy-front", "bad-guy-appear"];
 const badGuys = [];
 const $container = document.getElementsByClassName("container")[0];
@@ -10,10 +11,15 @@ const emptyClip = new Audio("../assets/emptyClip.mp3");
 const reload = new Audio("../assets/reload.mp3");
 const $points = document.getElementsByClassName("points")[0];
 
-const createBadGuy = (x = -80, dx = 5, className) => {
+const createBadGuy = par => {
+  let [x, y, className] = par;
   // const y = Math.floor(Math.random() * 800);
   // console.log(y);
-  const y = 600;
+  if (!y) {
+    y = 600;
+  }
+
+  console.log(x, y, className);
   const badGuy = document.createElement("div");
   badGuy.classList.add(className);
   $container.appendChild(badGuy);
@@ -23,7 +29,7 @@ const createBadGuy = (x = -80, dx = 5, className) => {
   //   let dx = 5;
 
   // badGuy.style.display = "none";
-  // badGuy.style.left = x + "px";
+  badGuy.style.left = x + "px";
   badGuy.style.top = y + "px";
   badGuy.life = 5;
   // const appear = () => {
@@ -40,6 +46,7 @@ const createBadGuy = (x = -80, dx = 5, className) => {
     if (clip === 0) {
       emptyClip.play();
     } else {
+      badGuy.classList.remove("bad-guy-shooting");
       badGuy.classList.add("bad-guy-dying");
 
       points++;
@@ -54,12 +61,10 @@ const createBadGuy = (x = -80, dx = 5, className) => {
   });
   // return setInterval(appear, 250);
 };
-badGuys.push(createBadGuy(-70, 10, "bad-guy-front"));
-badGuys.push(createBadGuy(-70, 10, "bad-guy"));
-// badGuys.push(createBadGuy(-70, 15));
-// badGuys.push(createBadGuy(-70, 20));
-// badGuys.push(createBadGuy(-70, 25));
-// badGuys.push(createBadGuy(-70, 5));
+badGuys.push(createBadGuy([70, null, "bad-guy-front"]));
+badGuys.push(createBadGuy([70, 10, "bad-guy-ally"]));
+// badGuys.push(createBadGuy(-70, null, "bad-guy-car"));
+// badGuys.push(createBadGuy(-70, null, "bad-guy-right"));
 
 // console.log(badGuys);
 $container.addEventListener("click", e => {
@@ -92,3 +97,11 @@ document.body.addEventListener("keydown", e => {
     clip = 7;
   }
 });
+const checkIfShooting = () => {
+  const $shootingGuys = document.getElementsByClassName("bad-guy-shooting");
+  if ($shootingGuys.length) {
+    life--;
+    console.log(life);
+  }
+};
+setInterval(checkIfShooting, 200);
