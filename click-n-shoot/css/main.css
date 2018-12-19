@@ -1,11 +1,21 @@
 body {
   position: relative;
 }
+.progress {
+  height: 30px;
+}
 .progress-bar {
   width: 100%;
-  z-index: 99;
-  display: block;
 }
+/* .feedback {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background: white;
+  z-index: 2;
+  opacity: 0;
+  /* animation: changeOpacity 0.2s infinite; */
+/* } */
 .container {
   height: 100vh;
   width: 100vw;
@@ -78,8 +88,11 @@ body {
   left: 50%;
   transition: all 0.1s ease;
 }
-.points {
+h3 {
   color: aliceblue;
+}
+.life-heading {
+  text-align: right;
 }
 @keyframes badGuyRight {
   0% {
@@ -122,5 +135,13 @@ body {
   }
   100% {
     left: 80%;
+  }
+}
+@keyframes changeOpacity {
+  from {
+    opacity: 0.94;
+  }
+  to {
+    opacity: 1;
   }
 }

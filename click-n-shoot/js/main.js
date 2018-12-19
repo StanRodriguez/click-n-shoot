@@ -1,6 +1,6 @@
 let points = 0;
-let clip = 7;
-let life = 200;
+let clip = 5;
+let life = 100;
 const classes = ["bad-guy", "bad-guy-front", "bad-guy-appear"];
 const badGuys = [];
 const $container = document.getElementsByClassName("container")[0];
@@ -90,6 +90,8 @@ $container.addEventListener("click", e => {
 // const $badGuy = document.getElementsByClassName("bad-guy")[0];
 // $badGuy.style.animation = "badGuy 3s 2s forwards";
 // $badGuy.style.WebkitAnimation = "badGuy 3s 2s forwards";
+
+//reload
 document.body.addEventListener("keydown", e => {
   e.preventDefault();
   if (e.key == "r") {
@@ -97,11 +99,25 @@ document.body.addEventListener("keydown", e => {
     clip = 7;
   }
 });
+
+//check if enemies are shooting you and reduce health
 const checkIfShooting = () => {
   const $shootingGuys = document.getElementsByClassName("bad-guy-shooting");
+  // const $feedback = document.getElementsByClassName("feedback")[0];
+  // $feedback.style.opacity = 0;
+  $container.style.animation = null;
   if ($shootingGuys.length) {
-    life--;
-    console.log(life);
+    $container.style.animation = "changeOpacity 0.8s infinite";
+    life -= $shootingGuys.length;
+
+    $lifeBar = document.getElementById("life");
+    $lifeBar.textContent = life + "%";
+    $lifeBar.style.width = life + "%";
+    if (life < 15) {
+      $lifeBar.classList.add("bg-danger");
+    } else if (life < 50) {
+      $lifeBar.classList.add("bg-warning");
+    }
   }
 };
-setInterval(checkIfShooting, 200);
+setInterval(checkIfShooting, 100);

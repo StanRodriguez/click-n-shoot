@@ -26,22 +26,31 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
+    <!-- <div class="feedback"></div> -->
     <div class="container">
       <div class="row">
-        <h3 class="points">0000<div class="progress">
+        <label for="points"
+          >Score
+          <h3 class="col-2 points">0000</h3></label
+        >
+        <h3 class="col-2 life-heading">Life:</h3>
+        <div class="col-8 progress">
           <div
+            id="life"
             class="progress-bar"
             role="progressbar"
-            style="width: 100%"
             aria-valuenow="100"
             aria-valuemin="0"
             aria-valuemax="100"
-          ></div></h3>
-        
+          ></div>
         </div>
+        <div class="ammo"><img src="./assets/ammo.png" alt="ammo" /></div>
+        <div class="ammo"><img src="./assets/ammo.png" alt="ammo" /></div>
       </div>
-      <!-- <div class="bad-guy"></div> -->
     </div>
+
+    <!-- <div class="bad-guy"></div> -->
+
     <div class="bullet"></div>
   </body>
 </html>
