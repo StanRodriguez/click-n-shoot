@@ -24,13 +24,11 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 This is a click-n-shoot game where you have a crosshair and you can kill enemies on the screen. They can kill you if you lose too much time. (put more details)
 
-## Wireframes
+## [Wireframes]( https://drive.google.com/open?id=1ddeeA9dvEupBN0VkjbT5xoJqxcfpYusO)
 
-https://drive.google.com/open?id=1ddeeA9dvEupBN0VkjbT5xoJqxcfpYusO
+## [Priority Matrix]
 
-## Priority Matrix
-
-https://drive.google.com/open?id=197GHVp_gKiAplvAXyFjNHF7LVb1enJ-2
+(https://drive.google.com/open?id=197GHVp_gKiAplvAXyFjNHF7LVb1enJ-2)
 
 ### MVP/PostMVP - 5min
 
@@ -80,13 +78,13 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component                                    | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| HTML & CSS basics                            |    H     |      3hrs      |    20mins     |   25 mins   |
-| create divs as enemies                       |    H     |      4hrs      |      1hr      |     1hr     |
-| make animations for enemies                  |    M     |      3hrs      |     2hrs      |    2hrs     |
+| HTML & CSS basics                            |    H     |      3hrs      |    20mins     |   0 mins   |
+| create divs as enemies                       |    H     |      4hrs      |      1hr      |     0hr     |
+| make animations for enemies                  |    M     |      3hrs      |     2hrs      |    0hrs     |
 | make the enemies appear randomly             |    H     |      4hrs      |   1 1/2hrs    |    -hrs     |
-| add events to enemies                        |    H     |      3hrs      |   1 1/2hrs    |  1 1/2hrs   |
-| make animation when enemies shoot the player |    M     |      4hrs      |     1hrs      |     1hr     |
-| Create enemy attack animation                |    H     |      4hrs      |      1hr      |     1hr     |
+| add events to enemies                        |    H     |      3hrs      |   1 1/2hrs    |  0hrs   |
+| make animation when enemies shoot the player |    M     |      4hrs      |     1hrs      |     0hr     |
+| Create enemy attack animation                |    H     |      4hrs      |      1hr      |     0hr     |
 | Total                                        |    H     |     29hrs      | 8hrs 20 mins  |    0hrs     |
 
 ## Helper Functions
