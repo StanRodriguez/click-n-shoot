@@ -24,7 +24,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 This is a click-n-shoot game where you have a crosshair and you can kill enemies on the screen. They can kill you if you lose too much time. (put more details)
 
-## [Wireframes]( https://drive.google.com/open?id=1ddeeA9dvEupBN0VkjbT5xoJqxcfpYusO)
+## [Wireframes](https://drive.google.com/open?id=1ddeeA9dvEupBN0VkjbT5xoJqxcfpYusO)
 
 ## [Priority Matrix]
 
@@ -78,24 +78,25 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component                                    | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| HTML & CSS basics                            |    H     |      3hrs      |    20mins     |   0 mins   |
+| HTML & CSS basics                            |    H     |      3hrs      |     0.5hr     |   0 mins    |
 | create divs as enemies                       |    H     |      4hrs      |      1hr      |     0hr     |
-| make animations for enemies                  |    M     |      3hrs      |     2hrs      |    0hrs     |
-| make the enemies appear randomly             |    H     |      4hrs      |   1 1/2hrs    |    -hrs     |
-| add events to enemies                        |    H     |      3hrs      |   1 1/2hrs    |  0hrs   |
+| make animations for enemies                  |    M     |      3hrs      |     4hrs      |    0hrs     |
+| make the enemies appear randomly             |    H     |      4hrs      |     5hrs      |    -hrs     |
+| add events to enemies                        |    H     |      3hrs      |     3hrs      |    0hrs     |
 | make animation when enemies shoot the player |    M     |      4hrs      |     1hrs      |     0hr     |
 | Create enemy attack animation                |    H     |      4hrs      |      1hr      |     0hr     |
-| Total                                        |    H     |     29hrs      | 8hrs 20 mins  |    0hrs     |
+| Total                                        |    H     |     29hrs      |    15.5hrs    |    0hrs     |
 
 ## Helper Functions
 
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
-| Function      |             Description             |
-| ------------- | :---------------------------------: |
-| setInterval   | Make to run a function indefinitely |
-| setTimeout    |     Run a function after x time     |
-| clearInterval |         Stop a setInterval          |
+| Function                                   |                  Description                   |
+| ------------------------------------------ | :--------------------------------------------: |
+| setInterval                                |      Make to run a function indefinitely.      |
+| setTimeout                                 |          Run a function after x time.          |
+| clearInterval                              |              Stop a setInterval.               |
+| addEventListener("animationend",myFuntion) | call "myFunction" when the CSS animation ends. |
 
 ## Additional Libraries
 
@@ -123,13 +124,19 @@ document.body.addEventListener("keydown", e => {
   });
 ```
 
+```
+// destructor: the array values of "par" are put in "x,y,className".
+let [x, y, className] = par;
+```
+
 ## Change Log
 
 Use this section to document what changes were made and the reasoning behind those changes.
 
-|                     Before                     |           After           |                           Reasons                            |
-| :--------------------------------------------: | :-----------------------: | :----------------------------------------------------------: |
-| Total control enemies behavior with javascript | Partial behavior with CSS | Wanted behavior is semi-ramdom (pre-defined random behavior) |
+|                     Before                     |                     After                      |                           Reasons                            |    Date    |
+| :--------------------------------------------: | :--------------------------------------------: | :----------------------------------------------------------: | :--------: |
+| Total control enemies behavior with javascript |           Partial behavior with CSS            | Wanted behavior is semi-ramdom (pre-defined random behavior) | 2018-12-18 |
+|           Partial behavior with CSS            | Back to complete control on animations with JS |                      Too many keyframes                      | 2018-12-19 |
 
 ## Issues and Resolutions
 

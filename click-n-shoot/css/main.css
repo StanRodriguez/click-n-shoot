@@ -7,15 +7,7 @@ body {
 .progress-bar {
   width: 100%;
 }
-/* .feedback {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  background: white;
-  z-index: 2;
-  opacity: 0;
-  /* animation: changeOpacity 0.2s infinite; */
-/* } */
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -31,47 +23,17 @@ body {
   background-image: url("../assets/runningEnemy.gif");
   background-size: cover;
   position: absolute;
-  left: 80px;
-  animation: badGuy 2s forwards;
+  left: 100px;
+  transition: all 0.2s ease-in-out;
+  /* animation: badGuy 2s forwards; */
 }
 .bad-guy-right {
-  height: 100px;
-  width: 100px;
-  background-image: url("../assets/runningEnemy.gif");
-  background-size: cover;
-  position: absolute;
-  left: 80px;
   transform: scaleX(-1);
-  animation: badGuyRight 2s forwards;
-}
-.bad-guy-car {
-  height: 100px;
-  width: 100px;
-  background-image: url("../assets/runningEnemy.gif");
-  background-size: cover;
-  position: absolute;
-  transform: scaleX(-1);
-  animation: badGuyRightCar 2s forwards;
-}
-.bad-guy-ally {
-  height: 100px;
-  width: 100px;
-  background-image: url("../assets/runningEnemy.gif");
-  background-size: cover;
-  position: absolute;
-  left: 80px;
-  animation: badGuyAlly 2s forwards;
+  left: 900px;
+  transition: all 0.2s ease;
+  /* animation: badGuyRight 2s forwards; */
 }
 
-.bad-guy-front {
-  height: 100px;
-  width: 100px;
-  background-image: url("../assets/runningEnemy.gif");
-  background-size: cover;
-  position: absolute;
-  /* left: 80px; */
-  animation: badGuyFront 2s forwards;
-}
 .bad-guy-shooting {
   background-image: url("../assets/enemyFrontOnly.gif");
 }
@@ -82,6 +44,7 @@ body {
 .bullet {
   width: 20px;
   height: 20px;
+  opacity: 0;
   background-image: url("../assets/bullet.png");
   background-size: cover;
   position: absolute;
@@ -105,10 +68,10 @@ h3 {
 
 @keyframes badGuy {
   0% {
-    left: 100%;
+    left: 0;
   }
   100% {
-    left: 0;
+    left: 100;
   }
 }
 @keyframes badGuyFront {
@@ -121,12 +84,14 @@ h3 {
     width: 100px;
   }
 }
-@keyframes badGuyAlly {
+@keyframes badGuyAlley {
   0% {
     top: -10px;
+    left: 0;
   }
   100% {
     top: 100px;
+    left: 80px;
   }
 }
 @keyframes badGuyRightCar {
