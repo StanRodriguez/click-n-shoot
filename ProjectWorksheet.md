@@ -14,7 +14,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Dec 18th | Pseudocode / actual code                             | Complete   |
 | Dec 18th | Clickable enemies                                    | Complete   |
 | Dec 19th | Make enemies shoot you                               | Complete   |
-| Dec 19th | Enemies appear randomly                              | Incomplete |
+| Dec 19th | Enemies appear randomly                              | Complete   |
 | Dec 19th | Keep score                                           | Complete   |
 | Dec 20th | PostMvp                                              | Incomplete |
 | Dec 20th | Quicktime Video                                      | Incomplete |
