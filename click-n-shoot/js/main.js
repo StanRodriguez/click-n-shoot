@@ -4,7 +4,7 @@ let life = 100;
 let difficulty = 3000;
 
 const badGuys = ["bad-guy", "bad-guy-right", "bad-guy-alley", "bad-guy-car"];
-const $container = document.getElementsByClassName("container")[0];
+const $container = document.getElementsByClassName("container-fluid")[0];
 const $bullet = document.getElementsByClassName("bullet")[0];
 const shoot = new Audio("../assets/shoot.mp3");
 const death = new Audio("../assets/death.mp3");
@@ -112,7 +112,9 @@ const toShoot = e => {
   }
 };
 const levelCheck = () => {
-  if (difficulty > 2000) {
+  if (difficulty > 2500) {
+    $level.textContent = "Level 1";
+  } else if (difficulty > 2000) {
     $level.textContent = "Level 2";
   } else if (difficulty > 1500) {
     $level.textContent = "Level 3";
@@ -124,9 +126,9 @@ const generation = () => {
   levelCheck();
   createBadGuy();
   if (difficulty > 2500) {
-    difficulty -= 50;
+    difficulty -= 100;
   } else if (difficulty > 2000) {
-    difficulty -= 40;
+    difficulty -= 70;
   } else if (difficulty > 1500) {
     difficulty -= 30;
   } else if (difficulty > 1000) {

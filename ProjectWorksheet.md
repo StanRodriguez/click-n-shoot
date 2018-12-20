@@ -38,15 +38,16 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Click the enemy to shoot them &#10003;
 - Make the enemies shoot you &#10003;
-- Enemies appear randomly
+- Enemies appear randomly &#10003;
 - Keep Score &#10003;
 
 #### PostMVP
 
 - Landing page
-- Different levels with faster enemies
+- Different levels with faster enemies &#10003;
 - Boss fight
 - Different movements
+- Game Over Feedback
 - Hiding enemies
 - Reload &#10003;
 - Enemy Health
