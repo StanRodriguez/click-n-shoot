@@ -26,9 +26,7 @@ This is a click-n-shoot game where you have a crosshair and you can kill enemies
 
 ## [Wireframes](https://drive.google.com/open?id=1ddeeA9dvEupBN0VkjbT5xoJqxcfpYusO)
 
-## [Priority Matrix]
-
-(https://drive.google.com/open?id=197GHVp_gKiAplvAXyFjNHF7LVb1enJ-2)
+## [Priority Matrix](https://drive.google.com/open?id=197GHVp_gKiAplvAXyFjNHF7LVb1enJ-2)
 
 ### MVP/PostMVP - 5min
 
