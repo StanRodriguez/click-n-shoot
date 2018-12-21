@@ -87,7 +87,9 @@ Time frames are also key in the development cycle. You have limited time to code
 | PostMVP                                      |
 | Landing Page                                 |    L     |      2hrs      |      1hr      |     0hr     |
 | Player Health                                |    M     |      2hrs      |     2.5hr     |     0hr     |
-| Game Over Feedback                           |    M     |      2hrs      |      2hr      |     0hr     |
+| Game Over Feedback                           |    M     |     1.5hrs     |      2hr      |     0hr     |
+| Reload                                       |    M     |      2hrs      |      1hr      |     0hr     |
+| Different levels with faster enemies         |    M     |      2hrs      |      3hr      |     0hr     |
 | -------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Total                                        |    H     |     29hrs      |    15.5hrs    |    0hrs     |
 
