@@ -6,27 +6,27 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-| Day      | Deliverable                                          | Status           |
-| -------- | ---------------------------------------------------- | ---------------- |
-| Dec 17th | Project Description                                  | Complete         |
-| Dec 17th | Wireframes / Priority Matrix / Functional Components | Complete         |
-| Dec 17th | Core Application Structure (HTML, CSS, etc.)         | Complete         |
-| Dec 18th | Pseudocode / actual code                             | Complete         |
-| Dec 18th | Clickable enemies                                    | Complete         |
-| Dec 19th | Make enemies shoot you                               | Complete         |
-| Dec 19th | Enemies appear randomly                              | Complete         |
-| Dec 19th | Keep score                                           | Complete         |
-| Dec 20th | PostMvp                                              | Parcial-complete |
-| Dec 20th | Quicktime Video                                      | Incomplete       |
-| Dec 21th | Present                                              | Incomplete       |
+| Day      | Deliverable                                          | Status             |
+| -------- | ---------------------------------------------------- | ------------------ |
+| Dec 17th | Project Description                                  | Complete           |
+| Dec 17th | Wireframes / Priority Matrix / Functional Components | Complete           |
+| Dec 17th | Core Application Structure (HTML, CSS, etc.)         | Complete           |
+| Dec 18th | Pseudocode / actual code                             | Complete           |
+| Dec 18th | Clickable enemies                                    | Complete           |
+| Dec 19th | Make enemies shoot you                               | Complete           |
+| Dec 19th | Enemies appear randomly                              | Complete           |
+| Dec 19th | Keep score                                           | Complete           |
+| Dec 20th | PostMvp                                              | Parcially complete |
+| Dec 20th | Quicktime Video                                      | Incomplete         |
+| Dec 21th | Present                                              | Incomplete         |
 
 ## Project Description
 
 This is a click-n-shoot game where you have a crosshair and you can kill enemies on the screen. They can kill you if you lose too much time. (put more details)
 
-## [Wireframes](https://drive.google.com/open?id=1ddeeA9dvEupBN0VkjbT5xoJqxcfpYusO)
+## [Wireframes](https://photos.app.goo.gl/SeQ9pXCgDX79174UA)
 
-## [Priority Matrix](https://drive.google.com/open?id=197GHVp_gKiAplvAXyFjNHF7LVb1enJ-2)
+## [Priority Matrix](https://photos.app.goo.gl/skyNRdNvjXApLAv97)
 
 ### MVP/PostMVP - 5min
 
@@ -77,21 +77,20 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component                                    | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| HTML & CSS basics                            |    H     |      3hrs      |     0.5hr     |   0 mins    |
-| create divs as enemies                       |    H     |      4hrs      |      1hr      |     0hr     |
-| make animations for enemies                  |    M     |      3hrs      |     4hrs      |    0hrs     |
-| make the enemies appear randomly             |    H     |      4hrs      |     5hrs      |    -hrs     |
-| add events to enemies                        |    H     |      3hrs      |     3hrs      |    0hrs     |
-| make animation when enemies shoot the player |    M     |      4hrs      |     1hrs      |     0hr     |
-| Create enemy attack animation                |    H     |      4hrs      |      1hr      |     0hr     |
+| HTML & CSS basics                            |    H     |      3hrs      |     0.5hr     |    0.5hr    |
+| create divs as enemies                       |    H     |      4hrs      |     1hrs      |     1hr     |
+| make animations for enemies                  |    M     |      3hrs      |     4hrs      |    4hrs     |
+| make the enemies appear randomly             |    H     |      4hrs      |     5hrs      |    5hrs     |
+| add events to enemies                        |    H     |      3hrs      |     3hrs      |    3hrs     |
+| make animation when enemies shoot the player |    M     |      4hrs      |     1hrs      |    1hrs     |
+| Create enemy attack animation                |    H     |      4hrs      |     1hrs      |    1hrs     |
 | PostMVP                                      |
-| Landing Page                                 |    L     |      2hrs      |      1hr      |     0hr     |
-| Player Health                                |    M     |      2hrs      |     2.5hr     |     0hr     |
-| Game Over Feedback                           |    M     |     1.5hrs     |      2hr      |     0hr     |
-| Reload                                       |    M     |      2hrs      |      1hr      |     0hr     |
-| Different levels with faster enemies         |    M     |      2hrs      |      3hr      |     0hr     |
-| -------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Total                                        |    H     |     29hrs      |    15.5hrs    |    0hrs     |
+| Landing Page                                 |    L     |      2hrs      |     1hrs      |    1hrs     |
+| Player Health                                |    M     |      2hrs      |    2.5hrs     |   2.5hrs    |
+| Game Over Feedback                           |    M     |     1.5hrs     |     2hrs      |    2hrs     |
+| Reload                                       |    M     |      2hrs      |     1hrs      |    1hrs     |
+| Different levels with faster enemies         |    M     |      2hrs      |     3hrs      |    3hrs     |
+| Total                                        |    H     |     29hrs      |     25hrs     |    25hrs    |
 
 ## Helper Functions
 
