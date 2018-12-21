@@ -4,6 +4,12 @@
   color: aliceblue;
   font-family: "Press Start 2P", cursive;
 }
+html,
+body {
+  /* background-color: black; */
+  overflow: hidden;
+}
+
 body {
   position: relative;
 }

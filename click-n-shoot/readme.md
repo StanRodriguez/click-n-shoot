@@ -27,6 +27,8 @@ Be careful with your ammo! You have a limited amount of bullets per clip. Press 
 - **Bootstrap**,a CSS Framework, was used for styling the information of the game including the life bar (progress bar).
 - **CSS keyframes** were used. However, most of the animations generated on the game was created in **javascript**.
 
+## [Project Worksheet](https://git.generalassemb.ly/bestanly/project-1/blob/master/ProjectWorksheet.md)
+
 ## [Wireframes](https://photos.app.goo.gl/SeQ9pXCgDX79174UA)
 
 ## [Project Matrix](https://photos.app.goo.gl/skyNRdNvjXApLAv97)
