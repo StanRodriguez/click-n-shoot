@@ -1,5 +1,6 @@
 let points = 0;
-let clip = 5;
+const bullets = 5;
+let clip = bullets;
 let life = 100;
 let difficulty = 3000;
 
@@ -17,8 +18,10 @@ const $gameOver = document.getElementsByClassName("game-over")[0];
 const $container = document.getElementsByClassName("container-fluid")[0];
 const $bullet = document.getElementsByClassName("bullet")[0];
 const $landing = document.getElementsByClassName("landing")[0];
+const $clip = document.getElementsByClassName("clip-amount")[0];
 
 setTimeout(() => {
+  $clip.textContent = "X " + clip;
   $landing.style.animation = "blink 2s forwards";
   $landing.addEventListener("animationend", () => {
     $landing.style.display = "none";
@@ -107,7 +110,8 @@ const toShoot = e => {
   if (clip === 0) {
     emptyClip.play();
   } else {
-    clip--;
+    --clip;
+    $clip.textContent = "X " + clip;
     shoot.play();
 
     $bullet.style.left = e.x + "px";
@@ -164,9 +168,10 @@ setTimeout(() => {
 $container.addEventListener("click", e => {
   toShoot(e);
 });
+//Game over Handler
 const gameOver = () => {
   if (life <= 0) {
-    $gameOver.style.display = "block";
+    // $gameOver.style.display = "block";
     document.getElementsByClassName("result")[0].textContent =
       "Your score:" + points;
     if (die) {
@@ -183,7 +188,8 @@ document.body.addEventListener("keydown", e => {
   if (e.key == "r") {
     reload.play();
     setTimeout(() => {
-      clip = 7;
+      clip = bullets;
+      $clip.textContent = "X " + clip;
     }, 2000);
   }
 });
