@@ -8,8 +8,6 @@ Be careful with your ammo! You have a limited amount of bullets per clip. Press 
 
 ## [Gameplay video](https://youtu.be/g4GzMe9ssKA)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/g4GzMe9ssKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## How to play
 
 - Click an enemy to kill it.
