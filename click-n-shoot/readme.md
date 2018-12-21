@@ -4,16 +4,18 @@
 
 Exciting but not easy game where you have to survive to a legion of enemy soldiers! To play, shoot the soldiers that appear on the screen by clicking on them.
 
-Be careful with your ammo! Press **"r"** key to reload. You have **7** shots in your clip
+Be careful with your ammo! You have a limited amount of bullets per clip. Press **"r"** key to reload.
 
-## Gameplay video
+## [Gameplay video](https://youtu.be/g4GzMe9ssKA)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g4GzMe9ssKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## How to play
 
 - Click an enemy to kill it.
 - You get points by killing enemies.
 - Do not let the enemies to shoot you by killing them first.
-- Do not shoot recklessly! You can run out of ammo! You have 7 bullets per clip. Reload the clip by presing **r** key. Watch out! reload time is two seconds
+- Do not shoot recklessly! You can run out of ammo! You have **5** bullets per clip. Reload the clip by presing **r** key. Watch out! reload time is two seconds
 - If you let them shoot you, your life bar is going to decrease.
 - If the life bar reach 0, it is game over!
 - Your final score would be displayed.
