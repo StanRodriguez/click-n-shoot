@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Click-n-Shoot</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -25,14 +26,17 @@
       <div class="row">
         <div class="row col game-info">
           <div class="row col score">
-            <h3 class="col score-label">Score:</h3>
-            <h3 class="col score-amount">0</h3>
+            <h3 class="col-12 col-md-6 score-label">Score:</h3>
+            <h3 class="col-12 col-md-6 score-amount">0</h3>
           </div>
-          <div class="row col level-info"><h3 class="level">Level: 1</h3></div>
+          <div class="row col-md-6 level-info">
+            <h3 class="col-md-6 level-tag">Level:</h3>
+            <h3 class="col-md-6 level">1</h3>
+          </div>
         </div>
         <div class="row col life-info">
-          <h3 class="col-3 life-label">Life:</h3>
-          <div class="col-9">
+          <h3 class="col-12 col-md-3 life-label">Life:</h3>
+          <div class="col">
             <div class="progress">
               <div
                 id="life"
@@ -53,6 +57,18 @@
     <!-- <div class="bad-guy"></div> -->
 
     <div class="bullet"></div>
-    <div class="game-over"></div>
+    <div class="landing pages">
+      <div class="title-container">
+        <h1 class="title">Click-n-Shoot</h1>
+        <h1 class="logo">
+          <img src="./assets/crosshair.png" alt="Crosshair" />
+        </h1>
+      </div>
+      <h1 class="start">Loading...</h1>
+    </div>
+    <div class="game-over pages">
+      <h1 class="result">Your score: 0</h1>
+      <h1><button type="button" class="try-again">Try again?</button></h1>
+    </div>
   </body>
 </html>

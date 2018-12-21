@@ -6,19 +6,19 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-| Day      | Deliverable                                          | Status     |
-| -------- | ---------------------------------------------------- | ---------- |
-| Dec 17th | Project Description                                  | Complete   |
-| Dec 17th | Wireframes / Priority Matrix / Functional Components | Complete   |
-| Dec 17th | Core Application Structure (HTML, CSS, etc.)         | Complete   |
-| Dec 18th | Pseudocode / actual code                             | Complete   |
-| Dec 18th | Clickable enemies                                    | Complete   |
-| Dec 19th | Make enemies shoot you                               | Complete   |
-| Dec 19th | Enemies appear randomly                              | Complete   |
-| Dec 19th | Keep score                                           | Complete   |
-| Dec 20th | PostMvp                                              | Incomplete |
-| Dec 20th | Quicktime Video                                      | Incomplete |
-| Dec 21th | Present                                              | Incomplete |
+| Day      | Deliverable                                          | Status           |
+| -------- | ---------------------------------------------------- | ---------------- |
+| Dec 17th | Project Description                                  | Complete         |
+| Dec 17th | Wireframes / Priority Matrix / Functional Components | Complete         |
+| Dec 17th | Core Application Structure (HTML, CSS, etc.)         | Complete         |
+| Dec 18th | Pseudocode / actual code                             | Complete         |
+| Dec 18th | Clickable enemies                                    | Complete         |
+| Dec 19th | Make enemies shoot you                               | Complete         |
+| Dec 19th | Enemies appear randomly                              | Complete         |
+| Dec 19th | Keep score                                           | Complete         |
+| Dec 20th | PostMvp                                              | Parcial-complete |
+| Dec 20th | Quicktime Video                                      | Incomplete       |
+| Dec 21th | Present                                              | Incomplete       |
 
 ## Project Description
 
@@ -41,11 +41,11 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### PostMVP
 
-- Landing page
+- Landing page &#10003;
 - Different levels with faster enemies &#10003;
 - Boss fight
-- Different movements
-- Game Over Feedback
+- Different movements &#10003;
+- Game Over Feedback &#10003;
 - Hiding enemies
 - Reload &#10003;
 - Enemy Health
@@ -84,6 +84,11 @@ Time frames are also key in the development cycle. You have limited time to code
 | add events to enemies                        |    H     |      3hrs      |     3hrs      |    0hrs     |
 | make animation when enemies shoot the player |    M     |      4hrs      |     1hrs      |     0hr     |
 | Create enemy attack animation                |    H     |      4hrs      |      1hr      |     0hr     |
+| PostMVP                                      |
+| Landing Page                                 |    L     |      2hrs      |      1hr      |     0hr     |
+| Player Health                                |    M     |      2hrs      |     2.5hr     |     0hr     |
+| Game Over Feedback                           |    M     |      2hrs      |      2hr      |     0hr     |
+| -------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Total                                        |    H     |     29hrs      |    15.5hrs    |    0hrs     |
 
 ## Helper Functions

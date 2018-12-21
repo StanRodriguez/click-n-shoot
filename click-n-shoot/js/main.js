@@ -4,15 +4,26 @@ let life = 100;
 let difficulty = 3000;
 
 const badGuys = ["bad-guy", "bad-guy-right", "bad-guy-alley"];
-const $container = document.getElementsByClassName("container-fluid")[0];
-const $bullet = document.getElementsByClassName("bullet")[0];
+
 const shoot = new Audio("../assets/shoot.mp3");
 const death = new Audio("../assets/death.mp3");
 const emptyClip = new Audio("../assets/emptyClip.mp3");
 const reload = new Audio("../assets/reload2.mp3");
+let die = new Audio("../assets/game-over.mp3");
+
 const $level = document.getElementsByClassName("level")[0];
 const $points = document.getElementsByClassName("score-amount")[0];
 const $gameOver = document.getElementsByClassName("game-over")[0];
+const $container = document.getElementsByClassName("container-fluid")[0];
+const $bullet = document.getElementsByClassName("bullet")[0];
+const $landing = document.getElementsByClassName("landing")[0];
+
+setTimeout(() => {
+  $landing.style.animation = "blink 2s forwards";
+  $landing.addEventListener("animationend", () => {
+    $landing.style.display = "none";
+  });
+}, 1500);
 
 //create a random number
 const randomize = length => {
@@ -22,7 +33,7 @@ const randomize = length => {
 //move the guy horizontally
 const moveBadGuy = (move, increment, interval, badGuy) => {
   return setInterval(() => {
-    badGuy.style.left = move + "px";
+    badGuy.style.left = move + "%";
     move += increment;
   }, interval);
 };
@@ -38,28 +49,27 @@ const createBadGuy = () => {
 
   switch (className) {
     case "bad-guy":
-      start = 100;
+      start = 1;
       x = 1;
-      y = 400 + randomize(250);
+      // y = 400 ;
+      y = 60 + randomize(26);
       break;
     case "bad-guy-right":
       badGuy.classList.add("bad-guy-right");
-
-      start = 900;
+      start = 95;
       x = -1;
-      y = 400 + randomize(250);
+      y = 60 + randomize(26);
       break;
     case "bad-guy-alley":
-      start = 100;
+      start = 8;
       x = 0;
-      y = 100;
+      y = 13;
       break;
   }
-  console.log(className);
 
-  badGuy.style.top = y + "px";
+  badGuy.style.top = y + "%";
   //generate the random movement
-  let int = moveBadGuy(start, randomize(40 * x), 200, badGuy);
+  let int = moveBadGuy(start, randomize(5 * x), 200, badGuy);
   $container.appendChild(badGuy);
 
   console.log(badGuy.style.left);
@@ -109,9 +119,7 @@ const toShoot = e => {
       $bullet.style.opacity = 1;
 
       $bullet.style.left = "50%";
-      // $bullet.style.top = "0";
       $bullet.style.top = "100%";
-      // $bullet.style.bottom = 0 + "px";
     }, 100);
   }
 };
@@ -119,13 +127,13 @@ const toShoot = e => {
 //Change the label on the screen
 const levelCheck = () => {
   if (difficulty > 2500) {
-    $level.textContent = "Level: 1";
+    $level.textContent = "1";
   } else if (difficulty > 2000) {
-    $level.textContent = "Level: 2";
+    $level.textContent = "2";
   } else if (difficulty > 1500) {
-    $level.textContent = "Level: 3";
+    $level.textContent = "3";
   } else if (difficulty > 1000) {
-    $level.textContent = "Level: 4";
+    $level.textContent = "4";
   }
 };
 
@@ -157,9 +165,14 @@ $container.addEventListener("click", e => {
   toShoot(e);
 });
 const gameOver = () => {
-  if (life === 0) {
+  if (life <= 0) {
     $gameOver.style.display = "block";
-    console.log("death");
+    document.getElementsByClassName("result")[0].textContent =
+      "Your score:" + points;
+    if (die) {
+      die.play();
+    }
+    die = null;
   }
 };
 setInterval(gameOver, 200);
@@ -193,4 +206,11 @@ const checkIfShooting = () => {
     }
   }
 };
+
 setInterval(checkIfShooting, 100);
+
+document
+  .getElementsByClassName("try-again")[0]
+  .addEventListener("click", () => {
+    location.reload();
+  });
