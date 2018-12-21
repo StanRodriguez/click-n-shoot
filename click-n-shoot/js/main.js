@@ -20,8 +20,13 @@ const $bullet = document.getElementsByClassName("bullet")[0];
 const $landing = document.getElementsByClassName("landing")[0];
 const $clip = document.getElementsByClassName("clip-amount")[0];
 
+const setBulletValue = params => {
+  clip === 0
+    ? ($clip.textContent = "Reload!!")
+    : ($clip.textContent = "X " + clip);
+};
 setTimeout(() => {
-  $clip.textContent = "X " + clip;
+  setBulletValue();
   $landing.style.animation = "blink 2s forwards";
   $landing.addEventListener("animationend", () => {
     $landing.style.display = "none";
@@ -111,7 +116,7 @@ const toShoot = e => {
     emptyClip.play();
   } else {
     --clip;
-    $clip.textContent = "X " + clip;
+    setBulletValue();
     shoot.play();
 
     $bullet.style.left = e.x + "px";
@@ -171,7 +176,7 @@ $container.addEventListener("click", e => {
 //Game over Handler
 const gameOver = () => {
   if (life <= 0) {
-    // $gameOver.style.display = "block";
+    $gameOver.style.display = "block";
     document.getElementsByClassName("result")[0].textContent =
       "Your score:" + points;
     if (die) {
@@ -189,7 +194,7 @@ document.body.addEventListener("keydown", e => {
     reload.play();
     setTimeout(() => {
       clip = bullets;
-      $clip.textContent = "X " + clip;
+      setBulletValue();
     }, 2000);
   }
 });
